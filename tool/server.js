@@ -140,8 +140,8 @@ function formatGoogleDate(d) {
 }
 
 function buildFreshnessTbs(now) {
-  const yesterday = new Date(now.getTime() - 86400000);
-  return `cdr:1,cd_min:${formatGoogleDate(yesterday)},cd_max:${formatGoogleDate(now)}`;
+  const weekAgo = new Date(now.getTime() - 7 * 86400000);
+  return `cdr:1,cd_min:${formatGoogleDate(weekAgo)},cd_max:${formatGoogleDate(now)}`;
 }
 
 async function callSerperNews(query, tbs) {
@@ -606,6 +606,7 @@ async function handleApi(req, res, url) {
 
     const MAX_QUERIES = 12;
     const RESULTS_PER_QUERY = 6;
+    const FALLBACK_THRESHOLD = 2;
     let combos = buildQueries(competitors, keywords);
     let notice = null;
     if (combos.length > MAX_QUERIES) {
@@ -617,9 +618,25 @@ async function handleApi(req, res, url) {
     const tbs = buildFreshnessTbs(now);
     const items = [];
     const errors = [];
+    let fallbackCount = 0;
     for (const combo of combos) {
       try {
-        const news = await callSerperNews(combo.query, tbs);
+        let news = await callSerperNews(combo.query, tbs);
+        if (combo.keyword && news.length <= FALLBACK_THRESHOLD) {
+          try {
+            const broader = await callSerperNews(combo.competitor, tbs);
+            const seenLinks = new Set(news.map((n) => n.link));
+            for (const n of broader) {
+              if (!seenLinks.has(n.link)) {
+                news.push(n);
+                seenLinks.add(n.link);
+              }
+            }
+            fallbackCount++;
+          } catch {
+            // 보완 검색 실패는 무시하고 원래 결과만 사용
+          }
+        }
         for (const n of news.slice(0, RESULTS_PER_QUERY)) {
           items.push({
             competitor: combo.competitor,
@@ -636,6 +653,10 @@ async function handleApi(req, res, url) {
       } catch (e) {
         errors.push(`"${combo.query}" 검색 실패: ${e.message}`);
       }
+    }
+    if (fallbackCount > 0) {
+      const fallbackNote = `${fallbackCount}건은 결과가 적어 키워드 없이 회사 이름만으로 추가 검색했습니다.`;
+      notice = notice ? `${notice} ${fallbackNote}` : fallbackNote;
     }
     return sendJson(res, 200, { items, errors, notice });
   }
@@ -658,7 +679,7 @@ async function handleApi(req, res, url) {
 
     try {
       runGit(["add", "docs"]);
-      const status = runGit(["status", "--porcelain"]);
+      const status = runGit(["status", "--porcelain", "--", "docs"]);
       if (!status.trim()) {
         return sendJson(res, 200, { ok: true, pushed: false, message: "변경사항이 없습니다. 이미 최신 상태입니다." });
       }
