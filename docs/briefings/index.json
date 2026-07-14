@@ -1,35 +1,36 @@
 [
   {
     "date": "2026-07-14",
-    "title": "AI Storage 기술 동향",
-    "summary": "Capex투자 현황, 인퍼런스 효율화 현황 조사",
+    "title": "AI briefing - tech and trend",
+    "summary": "",
     "top_importance": "medium",
     "competitors": [
+      "Lighting AI",
       "Together AI",
-      "Lightning AI",
+      "Lambda",
       "Anthropic",
-      "DeepInfra",
-      "OpenAI"
+      "DeepInfra"
     ],
     "metrics": {
-      "totalItems": 24,
-      "competitorCount": 2,
-      "newCount": 24,
+      "totalItems": 35,
+      "competitorCount": 4,
+      "newCount": 35,
       "byImportance": {
         "high": 0,
-        "medium": 24,
+        "medium": 35,
         "low": 0
       },
       "byCompetitor": {
         "(경쟁사 미지정)": 1,
-        "Together AI": 23
+        "Lighting AI": 13,
+        "Together AI": 19,
+        "Lambda": 2
       },
       "byKeyword": {
-        "KV cache": 4,
-        "CXL": 3,
-        "Inference": 6,
-        "Capex": 5,
-        "data center": 5
+        "inference": 14,
+        "CXL": 12,
+        "CMX": 7,
+        "ICMS": 1
       },
       "highlights": []
     }
