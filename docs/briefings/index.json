@@ -1,30 +1,36 @@
 [
   {
     "date": "2026-07-14",
-    "title": "GPU 기술현황",
-    "summary": "",
+    "title": "AI Storage 기술 동향",
+    "summary": "Capex투자 현황, 인퍼런스 효율화 현황 조사",
     "top_importance": "medium",
     "competitors": [
-      "AiVRES",
-      "Dell",
-      "SMCI",
-      "melanox"
+      "Together AI",
+      "Lightning AI",
+      "Anthropic",
+      "DeepInfra",
+      "OpenAI"
     ],
     "metrics": {
-      "totalItems": 8,
-      "competitorCount": 3,
-      "newCount": 8,
+      "totalItems": 24,
+      "competitorCount": 2,
+      "newCount": 24,
       "byImportance": {
         "high": 0,
-        "medium": 8,
+        "medium": 24,
         "low": 0
       },
       "byCompetitor": {
         "(경쟁사 미지정)": 1,
-        "Dell": 1,
-        "SMCI": 6
+        "Together AI": 23
       },
-      "byKeyword": {},
+      "byKeyword": {
+        "KV cache": 4,
+        "CXL": 3,
+        "Inference": 6,
+        "Capex": 5,
+        "data center": 5
+      },
       "highlights": []
     }
   },
