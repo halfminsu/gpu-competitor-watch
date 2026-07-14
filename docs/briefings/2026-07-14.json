@@ -1,0 +1,295 @@
+{
+  "date": "2026-07-14",
+  "title": "Neocloud",
+  "summary": "",
+  "top_importance": "medium",
+  "competitors": [
+    "nebius",
+    "coreweave"
+  ],
+  "keywords": [
+    "확장",
+    "capacity",
+    "capex",
+    "datacenter",
+    "inferencec"
+  ],
+  "items": [
+    {
+      "competitor": "nebius",
+      "keyword": "",
+      "headline": "",
+      "note": "",
+      "importance": "medium",
+      "url": "",
+      "source": "",
+      "published_at": "",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "capacity",
+      "headline": "Nebius: The $50 Billion Order Book That Keeps the Stock on a Knife Edge",
+      "note": "Strong Q1 revenue of $399M and $50B backlog from Microsoft and Meta contrast with a 30% stock drop, driven by massive $16-20B capex plans and insider sales.",
+      "importance": "medium",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/nebius-the-50-billion-order-book-that-keeps-the-stock-on-a-knife-edge/69763031",
+      "source": "Ad Hoc News",
+      "published_at": "2026-07-14T02:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "capacity",
+      "headline": "NBIS Stock Hits Fresh 52-Week Highs — Wall Street Says Nebius Is Innovating Faster Than Its Peers",
+      "note": "Shares of Nebius Group NV (NBIS) hit a new 52-week high on Thursday, with the stock on track for its best weekly performance in more than eight months.",
+      "importance": "medium",
+      "url": "https://stocktwits.com/news-articles/markets/equity/nbis-stock-new-52-week-high-wall-street-says-nebius-innovating-faster/cZX1H0cReSR",
+      "source": "Stocktwits",
+      "published_at": "2026-07-13T10:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "capacity",
+      "headline": "Nebius's $45 Billion Backlog Can't Mask the Market's Frantic Pulse",
+      "note": "Nebius holds $45B in contracts and 684% revenue growth, yet stock trades 26% below high due to market panic over Meta's potential move into cloud reselling.",
+      "importance": "medium",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/nebius-s-45-billion-backlog-can-t-mask-the-market-s-frantic-pulse/69760338",
+      "source": "Ad Hoc News",
+      "published_at": "2026-07-13T12:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "capacity",
+      "headline": "Nebius Group (NASDAQ: NBIS) Stock Price Surges 230% In First Half Of 2026 On Monster Meta Deal And Nvidia Backing",
+      "note": "Nebius Group N.V. (NASDAQ: NBIS), a European AI neocloud provider, posted a staggering 229.9% share price gain in the first half of 2026, according to data.",
+      "importance": "medium",
+      "url": "https://www.foreignpolicyjournal.com/2026/07/13/nebius-group-nasdaq-nbis-stock-price-surges-230-in-first-half-of-2026-on-monster-meta-deal-and-nvidia-backing/",
+      "source": "Foreign Policy Journal",
+      "published_at": "2026-07-13T19:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "capacity",
+      "headline": "Why Nebius Is Perfectly Positioned For The Open-Source AI Shift",
+      "note": "Nebius expands 65MW UK AI cloud by FY27, boosting revenue and margins amid Nvidia B200 pricing tailwinds. Click here to read this latest analysis of NBIS...",
+      "importance": "medium",
+      "url": "https://seekingalpha.com/article/4921516-nebius-perfectly-positioned-for-open-source-ai-shift",
+      "source": "Seeking Alpha",
+      "published_at": "2026-07-13T09:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "capacity",
+      "headline": "Meta Platforms vs. Nebius: Which Is the Better Neocloud Stock?",
+      "note": "The question for anyone parking retirement dollars in the AI infrastructure trade is simple: Should you own Meta Platforms (NASDAQ:META) or Nebius Group...",
+      "importance": "medium",
+      "url": "https://www.aol.com/articles/meta-platforms-vs-nebius-better-170221000.html",
+      "source": "AOL.com",
+      "published_at": "2026-07-13T19:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "datacenter",
+      "headline": "Nebius Group (NBIS) Could Be 11% Below Fair Value As Meta And Nvidia Deals Lift Focus",
+      "note": "Nebius Group (NasdaqGS:NBIS) is back in focus after a multi year $27b contract with Meta Platforms, a $2b investment from Nvidia, and fresh marketplace...",
+      "importance": "medium",
+      "url": "https://simplywall.st/stocks/us/software/nasdaq-nbis/nebius-group/news/nebius-group-nbis-could-be-11-below-fair-value-as-meta-and-n",
+      "source": "Simply Wall Street",
+      "published_at": "2026-07-13T08:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "datacenter",
+      "headline": "NorthPoint Development offers cash to win support for Pennsylvania data center project",
+      "note": "NorthPoint Development offers $45 million in resident grants to gain support for its proposed Pennsylvania data center project amid public opposition.",
+      "importance": "medium",
+      "url": "https://www.bizjournals.com/kansascity/news/2026/07/13/northpoint-10-thousand-dollar-grants-data-center.html",
+      "source": "The Business Journals",
+      "published_at": "2026-07-13T12:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "inferencec",
+      "headline": "Nebius 3.6 Shows How It Plans To Compete For AI Cloud Customers (NASDAQ:NBIS)",
+      "note": "Nebius (NBIS) Cloud 3.6, Echo AI DevOps and SkyPilot integration are boosting enterprise AI deployments with security & governance.",
+      "importance": "medium",
+      "url": "https://seekingalpha.com/article/4921741-nebius-stock-plans-compete-ai-cloud-customers?source=feed_all_articles",
+      "source": "Seeking Alpha",
+      "published_at": "2026-07-14T04:57:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "nebius",
+      "keyword": "inferencec",
+      "headline": "Why Is Nebius Stock Falling on Monday?",
+      "note": "Nebius Group N.V. (NASDAQ: NBIS) stock fell Monday amid Meta Platforms Inc. (NASDAQ: META) competition concerns and rising AI market valuation anxiety.",
+      "importance": "medium",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/07/60417810/why-is-nebius-stock-falling-on-monday",
+      "source": "Benzinga",
+      "published_at": "2026-07-13T15:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capacity",
+      "headline": "The Renewable Energy of CoreWeave's AI Centres in Stockholm",
+      "note": "CoreWeave and Conapto launch renewable data centres in Stockholm, delivering high-performance AI cloud capacity for European enterprises.",
+      "importance": "medium",
+      "url": "https://sustainabilitymag.com/news/the-renewable-energy-of-coreweaves-ai-centres-in-stockholm",
+      "source": "Sustainability Magazine",
+      "published_at": "2026-07-13T17:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capacity",
+      "headline": "CoreWeave (CRWV) Stock Faces Meta Compute Threat As Ark Invest Adds Shares",
+      "note": "Meta Platforms has launched \"Meta Compute,\" a third-party cloud AI offering that directly overlaps with CoreWeave's services. The move turns Meta from a...",
+      "importance": "medium",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-crwv-stock-faces-meta-200934969.html",
+      "source": "Yahoo Finance",
+      "published_at": "2026-07-13T20:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capacity",
+      "headline": "Aston Martin's Aramco Formula One Team, CoreWeave, NetApp, and the race to gain a competitive storage advantage",
+      "note": "The Aston Martin Aramco Formula One Team appears to be using CoreWeave and NetApp technology in a different way than the original announcements said it...",
+      "importance": "medium",
+      "url": "https://www.blocksandfiles.com/file/2026/07/13/aston-martins-aramco-formula-one-team-coreweave-netapp-and-the-race-to-gain-a-competitive-storage-advantage/5270001",
+      "source": "Blocks & Files",
+      "published_at": "2026-07-13T11:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capacity",
+      "headline": "Meta's Louisiana AI Campus Could Top $250 Billion Investment",
+      "note": "Meta Platforms NASDAQ:META, the company behind Facebook and a major builder of artificial intelligence infrastructure, is preparing to commit substantially...",
+      "importance": "medium",
+      "url": "https://www.tradingview.com/news/gurufocus:c92a54dfb094b:0-meta-s-louisiana-ai-campus-could-top-250-billion-investment/",
+      "source": "TradingView",
+      "published_at": "2026-07-13T13:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capacity",
+      "headline": "Meta Vs. Coreweave: How Meta is Looking to Bury Coreweave With ‘Meta Compute’ Sovereign Scale",
+      "note": "Meta (NASDAQ: META) and CoreWeave (NASDAQ: CRWV) just delivered Q1 2026 results that expose a brewing conflict. Meta is CoreWeave's largest backlog customer...",
+      "importance": "medium",
+      "url": "https://www.aol.com/articles/meta-vs-coreweave-meta-looking-162703000.html",
+      "source": "AOL.com",
+      "published_at": "2026-07-13T16:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capacity",
+      "headline": "APLD Dips 33% in a Month: Should You Hold or Fold the Stock?",
+      "note": "Applied Digital APLD shares have plunged 33% over the past month, significantly underperforming the Zacks Finance sector, which has gained 2.3% and the...",
+      "importance": "medium",
+      "url": "https://www.tradingview.com/news/zacks:fd0cbc68e094b:0-apld-dips-33-in-a-month-should-you-hold-or-fold-the-stock/",
+      "source": "TradingView",
+      "published_at": "2026-07-13T16:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capex",
+      "headline": "Oracle Tumbles 6% to Fresh 52-Week Low as Apple Sues OpenAI, Deepening Credit Jitters",
+      "note": "Oracle shares collapsed more than 6% to a fresh 52-week low of $132.27, pushing the one-month loss to 28%, after Apple sued OpenAI for alleged trade…",
+      "importance": "medium",
+      "url": "https://finance.biggo.com/news/38722d96-f120-4734-95a0-06a726ff8f5c",
+      "source": "BigGo Finance",
+      "published_at": "2026-07-14T01:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capex",
+      "headline": "Spitting chips: A deep dive into the data and token industry, and who carries the GPU risk",
+      "note": "This note provides an estimate of demand and supply of tokens, draws a conclusion about GPU pricing trends, then looks at some specific data centre finance...",
+      "importance": "medium",
+      "url": "https://reneweconomy.com.au/spitting-chips-a-deep-dive-into-the-data-and-token-industry-and-who-carries-the-gpu-risk/amp/",
+      "source": "Renew Economy",
+      "published_at": "2026-07-14T04:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capex",
+      "headline": "Oracle Is Now Down 28% in a Month. Will the 52-Week Low of $132 Hold or Fold?",
+      "note": "Shares of Oracle (NYSE:ORCL | ORCL Price Prediction) are trading at $132.27 in Monday afternoon action, down 6% on the day and touching a fresh 52-week low...",
+      "importance": "medium",
+      "url": "https://247wallst.com/investing/2026/07/13/oracle-is-now-down-28-in-a-month-will-the-52-week-low-of-132-hold-or-fold/",
+      "source": "24/7 Wall St.",
+      "published_at": "2026-07-13T18:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capex",
+      "headline": "Cloudflare Is Up 9% Today: Is It Outperforming Other AI Cloud Stocks Like Oracle, CoreWeave, and Snowflake?",
+      "note": "Shares of Cloudflare (NYSE:NET) are up 9% in midday trading to about $269 after Scotiabank upgraded the stock and raised its price target.",
+      "importance": "medium",
+      "url": "https://www.aol.com/articles/cloudflare-9-today-outperforming-other-173915546.html",
+      "source": "AOL.com",
+      "published_at": "2026-07-13T19:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capex",
+      "headline": "Cathie Wood Is Doubling Down on This AI Stock During the Sell-Off",
+      "note": "Cathie Wood, founder and CEO of Ark Invest, is loading up on an AI stock that the market has been dumping in recent weeks, CoreWeave(NASDAQ: CRWV).",
+      "importance": "medium",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/ARKK-A/pressreleases/3248257/cathie-wood-is-doubling-down-on-this-ai-stock-during-the-sell-off/",
+      "source": "The Globe and Mail",
+      "published_at": "2026-07-13T07:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "capex",
+      "headline": "CoreWeave Stock Sank 11% After Mark Zuckerberg's Meta Unveiled a Cloud Business Plan",
+      "note": "Meta plans to sell its excess AI compute as it expands its infrastructure. That move could generate near-term headwinds for neocloud companies.",
+      "importance": "medium",
+      "url": "https://www.aol.com/articles/coreweave-stock-sank-11-mark-115000125.html",
+      "source": "AOL.com",
+      "published_at": "2026-07-13T19:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "datacenter",
+      "headline": "Shortage of Equipment Holding up Scotland's Data Centres",
+      "note": "Shilpika Gautam CEO at Opna says investment in grid upgrades to support Scotland's data centres is being hindered by a shortage of critical power equipment.",
+      "importance": "medium",
+      "url": "https://procurementmag.com/news/shortage-of-equipment-holding-up-scotlands-data-centres",
+      "source": "Procurement Magazine",
+      "published_at": "2026-07-13T09:06:51.296Z",
+      "is_new": true
+    },
+    {
+      "competitor": "coreweave",
+      "keyword": "datacenter",
+      "headline": "CRWV Vs. QQQ: Buy CoreWeave for Explosive AI Alpha or Hold QQQ for Insulated Macro Safety?",
+      "note": "CoreWeave (NASDAQ:CRWV) and Invesco QQQ Trust (NASDAQ:QQQ) just gave investors two very different reads on the AI trade. CoreWeave posted its strongest...",
+      "importance": "medium",
+      "url": "https://www.aol.com/articles/crwv-vs-qqq-buy-coreweave-200239000.html",
+      "source": "AOL.com",
+      "published_at": "2026-07-13T14:06:51.296Z",
+      "is_new": true
+    }
+  ],
+  "generated_at": "2026-07-14T05:07:55.451Z"
+}

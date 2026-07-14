@@ -1,0 +1,44 @@
+{
+  "date": "2026-07-12",
+  "title": "경쟁사 아침 브리핑 — 7월 12일",
+  "summary": "A사 신제품 발표, B사 가격 인하 소문, C사 채용 확대 움직임 포착.",
+  "top_importance": "medium",
+  "competitors": ["A사", "B사", "C사"],
+  "keywords": ["신제품", "가격", "채용"],
+  "items": [
+    {
+      "competitor": "A사",
+      "keyword": "신제품",
+      "headline": "A사, 하반기 신제품 라인업 티저 공개",
+      "note": "정식 발표는 다음 주로 예상. 우리 신제품과 포지셔닝 겹칠 가능성.",
+      "importance": "medium",
+      "url": "https://example.com/news/a-teaser",
+      "source": "IT조선(예시)",
+      "published_at": "2026-07-12T07:40:00+09:00",
+      "is_new": true
+    },
+    {
+      "competitor": "B사",
+      "keyword": "가격",
+      "headline": "B사 일부 제품 가격 인하 검토 중이라는 업계 소문",
+      "note": "확인된 보도는 아님. 다음 브리핑에서 팔로업 필요.",
+      "importance": "low",
+      "url": "https://example.com/news/b-price-rumor",
+      "source": "업계 커뮤니티(예시)",
+      "published_at": "2026-07-11T22:10:00+09:00",
+      "is_new": false
+    },
+    {
+      "competitor": "C사",
+      "keyword": "채용",
+      "headline": "C사, 개발 직군 대규모 채용 공고",
+      "note": "특정 기술 스택(AI/데이터) 집중 채용 — 신사업 신호일 수 있음.",
+      "importance": "medium",
+      "url": "https://example.com/news/c-hiring",
+      "source": "채용 공고(예시)",
+      "published_at": "2026-07-12T09:00:00+09:00",
+      "is_new": true
+    }
+  ],
+  "generated_at": "2026-07-12T09:30:00+09:00"
+}

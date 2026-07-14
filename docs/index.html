@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>경쟁사 아침 브리핑 아카이브</title>
+<style>:root {
+  --bg: #f5f6f8;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e3e5e9;
+  --accent: #2b5fd9;
+  --high-bg: #fdecea;
+  --high-text: #c0392b;
+  --medium-bg: #fef7e0;
+  --medium-text: #9a7d0a;
+  --low-bg: #eef0f2;
+  --low-text: #616568;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+header.site-header {
+  margin-bottom: 24px;
+}
+
+header.site-header h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+
+header.site-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.toolbar label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.toolbar select {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  text-decoration: none;
+  color: var(--text);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.card:hover, .card:focus-visible {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.card-date {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.card-summary {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 12px;
+  background: var(--low-bg);
+  color: var(--low-text);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.badge-high { background: var(--high-bg); color: var(--high-text); }
+.badge-medium { background: var(--medium-bg); color: var(--medium-text); }
+.badge-low { background: var(--low-bg); color: var(--low-text); }
+
+.empty-state {
+  text-align: center;
+  color: var(--muted);
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.detail-header {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.detail-header .card-date { margin-bottom: 8px; }
+.detail-header h2 { margin: 0 0 10px; font-size: 20px; }
+.detail-header .card-summary { -webkit-line-clamp: unset; overflow: visible; font-size: 15px; }
+
+.compare-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.compare-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.competitor-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.competitor-column-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border);
+}
+
+.competitor-count {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.competitor-column .item-card {
+  margin-bottom: 12px;
+}
+
+.competitor-column .item-card:last-child {
+  margin-bottom: 0;
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.item-headline {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.item-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.item-note {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.item-source a {
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.new-badge {
+  font-size: 11px;
+  background: #e8f0fe;
+  color: var(--accent);
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* 카드 주요수치 (인덱스) */
+.card-metrics {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+/* 대시보드: 구역(정량/정성/비교) 구분 */
+.dashboard-section {
+  padding-top: 24px;
+  margin-bottom: 8px;
+  border-top: 1px solid var(--border);
+}
+.dashboard-section:first-of-type {
+  padding-top: 0;
+  border-top: none;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 16px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.subsection-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 10px;
+}
+
+.stat-tiles {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stat-tile {
+  flex: 1;
+  min-width: 110px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.stat-tile .stat-value {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.stat-tile.stat-tile-alert .stat-value {
+  color: var(--high-text);
+}
+
+.stat-tile .stat-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* 대시보드: 막대 그래프 (외부 라이브러리 없이 CSS로만 구현) */
+.bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 36px;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.bar-label {
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar-track {
+  background: var(--low-bg);
+  border-radius: 6px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: var(--accent);
+}
+
+.bar-fill-high { background: var(--high-text); }
+.bar-fill-medium { background: var(--medium-text); }
+.bar-fill-low { background: var(--low-text); }
+
+.bar-value {
+  text-align: right;
+  color: var(--muted);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+/* 정성 분석: 핵심 포인트 하이라이트 */
+.highlight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.highlight-item {
+  border-left: 3px solid var(--high-text);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+}
+
+.highlight-item .highlight-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.highlight-item .highlight-headline {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.highlight-item .highlight-note {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+    <header class="site-header">
+      <h1>경쟁사 아침 브리핑 아카이브</h1>
+      <p>매일 아침 정리된 경쟁사 동향 브리핑 모음 (최근 갱신: 2026-07-14)</p>
+    </header>
+
+    <div class="toolbar">
+      <label for="importance-filter">중요도 필터</label>
+      <select id="importance-filter">
+        <option value="0">전체</option>
+        <option value="2">중 이상</option>
+        <option value="3">상만</option>
+      </select>
+    </div>
+
+    <div id="card-grid" class="card-grid">
+    <a class="card" href="briefings/2026-07-14.html" data-rank="2">
+      <div class="card-date">2026-07-14 <span class="badge badge-medium">중</span></div>
+      <h3 class="card-title">Neocloud</h3>
+      <p class="card-summary"></p>
+      <div class="card-metrics">총 25건 · 경쟁사 2 · NEW 25</div>
+      <div class="card-tags">
+        <span class="tag">nebius</span><span class="tag">coreweave</span>
+      </div>
+    </a>
+  
+    <a class="card" href="briefings/2026-07-13.html" data-rank="3">
+      <div class="card-date">2026-07-13 <span class="badge badge-high">상</span></div>
+      <h3 class="card-title">경쟁사 아침 브리핑 — 7월 13일</h3>
+      <p class="card-summary">A사 신제품 정식 발표 임박, B사 임원 인사 발표, 특이 동향 없음.</p>
+      <div class="card-metrics">총 2건 · 경쟁사 2 · NEW 2</div>
+      <div class="card-tags">
+        <span class="tag">A사</span><span class="tag">B사</span>
+      </div>
+    </a>
+  
+    <a class="card" href="briefings/2026-07-12.html" data-rank="2">
+      <div class="card-date">2026-07-12 <span class="badge badge-medium">중</span></div>
+      <h3 class="card-title">경쟁사 아침 브리핑 — 7월 12일</h3>
+      <p class="card-summary">A사 신제품 발표, B사 가격 인하 소문, C사 채용 확대 움직임 포착.</p>
+      <div class="card-metrics">총 3건 · 경쟁사 3 · NEW 2</div>
+      <div class="card-tags">
+        <span class="tag">A사</span><span class="tag">B사</span><span class="tag">C사</span>
+      </div>
+    </a>
+  </div>
+    <div id="empty-state" class="empty-state" style="display:none;">아직 브리핑이 없습니다.</div>
+
+    <script>
+      document.getElementById("importance-filter").addEventListener("change", function (e) {
+        var min = Number(e.target.value);
+        document.querySelectorAll("#card-grid .card").forEach(function (card) {
+          var rank = Number(card.dataset.rank || 0);
+          card.style.display = rank >= min ? "" : "none";
+        });
+      });
+    </script>
+  
+</div>
+</body>
+</html>

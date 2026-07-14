@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-13",
+  "title": "경쟁사 아침 브리핑 — 7월 13일",
+  "summary": "A사 신제품 정식 발표 임박, B사 임원 인사 발표, 특이 동향 없음.",
+  "top_importance": "high",
+  "competitors": [
+    "A사",
+    "B사"
+  ],
+  "keywords": [
+    "신제품",
+    "인사"
+  ],
+  "items": [
+    {
+      "competitor": "A사",
+      "keyword": "신제품",
+      "headline": "A사, 신제품 발표 행사 다음 주 화요일 확정",
+      "note": "우리 신제품 출시 일정과 1주일 차이. 마케팅 일정 재검토 필요.",
+      "importance": "high",
+      "url": "https://example.com/news/a-launch-date",
+      "source": "보도자료(예시)",
+      "published_at": "2026-07-13T08:15:00+09:00",
+      "is_new": true
+    },
+    {
+      "competitor": "B사",
+      "keyword": "인사",
+      "headline": "B사, 신임 마케팅 총괄 영입",
+      "note": "경쟁사 마케팅 전략 변화 가능성 — 동향 계속 관찰.",
+      "importance": "medium",
+      "url": "https://example.com/news/b-exec-hire",
+      "source": "인사발령(예시)",
+      "published_at": "2026-07-13T06:50:00+09:00",
+      "is_new": true
+    }
+  ],
+  "generated_at": "2026-07-14T04:44:31.827Z"
+}
